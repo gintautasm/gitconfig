@@ -1,2 +1,12 @@
 [alias]
-lgr="log --pretty='format:%C(auto)%h %C(cyan)%ad %C(green)%an %C(reset)%s' --date=iso"
+  lgr="log --pretty='format:%C(auto)%h %C(cyan)%ad %C(green)%an %C(reset)%s' --date=iso"
+[core]
+  editor = code --wait
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
