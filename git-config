@@ -1,1 +1,0 @@
-alias lgr='git log --pretty='format:%C(auto)%h %C(cyan)%ad %C(green)%an %C(reset)%s' --date=iso'
